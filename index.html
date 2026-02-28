@@ -2,126 +2,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elite Training Experience</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Profesional</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="logo">ELITE</div>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#galeria">Galería</a>
-        <a href="#video">Video</a>
-        <a href="#planes">Planes</a>
-        <a href="#faq">FAQ</a>
-    </nav>
+<header>
+    <img src="logo.png" class="logo">
 </header>
 
-<!-- HERO -->
-<section id="inicio" class="hero">
-    <div class="hero-content">
-        <h1>Desarrolla tu Máximo Potencial</h1>
-        <p>Entrenamiento físico y mental de alto rendimiento.</p>
-        <button class="btn-primary" onclick="scrollToSection('planes')">Ver Planes</button>
+<section class="hero">
+    <h1>Transforma tu cuerpo y mente</h1>
+    <p>Entrenamiento profesional para todos los niveles</p>
+    <a href="#formulario" class="btn">Quiero Información</a>
+</section>
+
+<section class="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="cards">
+        <div class="card">Entrenadores certificados</div>
+        <div class="card">Clases para principiantes</div>
+        <div class="card">Resultados garantizados</div>
     </div>
 </section>
 
-<!-- CONTADORES -->
-<section class="stats">
-    <div class="stat">
-        <h2 class="counter" data-target="500">0</h2>
-        <p>Alumnos Activos</p>
-    </div>
-    <div class="stat">
-        <h2 class="counter" data-target="1200">0</h2>
-        <p>Sesiones Realizadas</p>
-    </div>
-    <div class="stat">
-        <h2 class="counter" data-target="10">0</h2>
-        <p>Años de Experiencia</p>
-    </div>
+<section class="testimonios">
+    <h2>Lo que dicen nuestros alumnos</h2>
+    <p>"Excelente ambiente y progreso rápido"</p>
 </section>
 
-<!-- GALERÍA -->
-<section id="galeria" class="gallery">
-    <h2>Galería</h2>
-    <div class="gallery-grid">
-        <img src="https://picsum.photos/400/300?1" onclick="openModal(this.src)">
-        <img src="https://picsum.photos/400/300?2" onclick="openModal(this.src)">
-        <img src="https://picsum.photos/400/300?3" onclick="openModal(this.src)">
-        <img src="https://picsum.photos/400/300?4" onclick="openModal(this.src)">
-    </div>
+<section id="formulario" class="form-section">
+    <h2>Solicita Información</h2>
+    <form id="miFormulario">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje"></p>
 </section>
 
-<!-- MODAL -->
-<div id="modal" class="modal" onclick="closeModal()">
-    <img id="modal-img">
-</div>
-
-<!-- VIDEO -->
-<section id="video" class="video-section">
-    <h2>Conoce Nuestra Metodología</h2>
-    <video controls>
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-    </video>
-</section>
-
-<!-- AUDIO -->
-<section class="audio-section">
-    <h2>Motívate Antes de Entrenar</h2>
-    <audio controls>
-        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
-    </audio>
-</section>
-
-<!-- PLANES -->
-<section id="planes" class="pricing">
-    <h2>Planes de Entrenamiento</h2>
-    <div class="pricing-cards">
-        <div class="price-card">
-            <h3>Básico</h3>
-            <p>$499 / mes</p>
-            <button class="btn-secondary">Elegir</button>
-        </div>
-        <div class="price-card featured">
-            <h3>Pro</h3>
-            <p>$899 / mes</p>
-            <button class="btn-secondary">Elegir</button>
-        </div>
-        <div class="price-card">
-            <h3>Elite</h3>
-            <p>$1499 / mes</p>
-            <button class="btn-secondary">Elegir</button>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <div class="faq-item">
-        <button onclick="toggleFAQ(this)">¿Necesito experiencia previa?</button>
-        <p>Nos adaptamos a cualquier nivel.</p>
-    </div>
-    <div class="faq-item">
-        <button onclick="toggleFAQ(this)">¿Cuánto duran las sesiones?</button>
-        <p>Entre 60 y 90 minutos.</p>
-    </div>
-</section>
-
-<!-- BOTÓN WHATSAPP -->
-<a href="https://wa.me/5210000000000?text=Hola%20quiero%20información" 
-class="whatsapp" target="_blank">💬</a>
-
-<footer>
-    <p>© 2026 Elite Training Experience</p>
-</footer>
+<a href="https://wa.me/5210000000000" class="whatsapp" target="_blank">💬</a>
 
 <script src="script.js"></script>
 </body>
